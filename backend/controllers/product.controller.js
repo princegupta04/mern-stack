@@ -16,6 +16,7 @@ export const getProducts = async (req, res) => {
 
 // ✅ Create new product
 export const createProducts = async (req, res) => {
+  console.log("Request Body:", req.body); // Debugging line 
   try {
     const data = req.body;
     console.log(data);
